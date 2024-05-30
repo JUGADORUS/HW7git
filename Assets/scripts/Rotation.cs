@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateObject : MonoBehaviour
+public class Rotation : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
 
-    void Update()
+    private void Update()
     {
         transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
     }
